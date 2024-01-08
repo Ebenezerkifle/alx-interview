@@ -17,7 +17,8 @@ def pascal_triangle(n):
             else:
                 ## look for the previous elements.
                 temp = triangle[x-2]
-                value = temp[y-2]+temp[y-1]
+                value = temp[y-2] + temp[y-1]
                 inner.append(value)
         triangle.append(inner)
+
     return triangle
